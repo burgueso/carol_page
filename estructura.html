@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1{
+    color: rgb(220, 220, 250);
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+    margin-left: 15px;
+}
+h2{
+    color: rgb(220, 220, 250);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+p{
+    color: rgb(220, 220, 250);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    font-size: large;
+}
+body {margin:0; background-color: #3a3a46;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #272730;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #4b1775;
+}
+
+.active {
+  background-color: #dd9fd0;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="utilidad.html">Utilidad</a></li>
+  <li><a class="active" style="color: rgb(220, 220, 250);" href="estructura.html">Estructura</a></li>
+  <li><a href="scarol.html">Sobre Carol</a></li>
+</ul>
+<h1>¿Cómo la he hecho?</h1>
+<p> <img src="code.png" alt="UwU" style="border-radius: 15px; float: right; width:300px; height: auto; margin-right: 50px;margin-left: 50px;"> Carol funciona con una placa Arduino Mega 2560, por lo que su código está escrito principalmente en c++, que es el lenguaje que usa Arduino. Aunque de los comandos que interaccionan con el PC se encarga un script escrito en Python que lee el monitior serial y ejecuta los comandos; el código en C++ solamente imprime comandos como "vol10" para cambiar el volumen a 10.<br><br>Físicamente se compone de un buzzer; para emitir sonidos, un led RGB que le coloqué con la intención de que sirviese para expresar; junto con el buzzer; algunas expresiones simples, cuatro leds de colores para indicar en qué parte del menú estás, un display de un dígito; que funciona, aunque no está en uso aún y sus dos ojos que, aunque parezcan simplemente decorativos, sirven como puentes en los raíles de la protoboard; que se encontraban rotos.<br><br>El menú se organiza de la siguiente manera: A, configura el volumen (Submenú A) y la sensibilidad del ratón (Submenú B). B, reproduce una playlist (botones 1, 2 y 3) y pausa o salta la canción hacia alante o hacia atrás (4, 5 o 6). C, menú de pruebas, sirve para activar las emociones, probar las canciones que toca Carol y realizar otras acciones puntuales de forma rápida para probarlo. D, reservado para los juegos que están por programar.<br><br>En un futuro me gustaría añadirle una pantalla (Ya sea led o lcd) y un micrófono para poder ejecutar comandos con la voz, ya que hay librerías que lo facilitan mucho.</p>
+</body>
+</html>
